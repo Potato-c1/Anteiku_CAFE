@@ -90,6 +90,52 @@
 
         footer { display: flex; justify-content: center; align-items: center; background: #2b1e1a; color: #ffffff; }
 
+        /* para sa mga naka cell Phones diyan */
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+                padding: 1rem;
+            }
+
+            .nav-links {
+                width: 100%;
+                justify-content: center;
+                gap: 1rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            #Expectations {
+                flex-direction: column;
+                padding: 2rem 1.5rem;
+            }
+
+            .expectationsCard {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .Pages {
+                flex-direction: column;
+                width: 100%;
+                align-items: center;
+            }
+
+            .button1, .button2 {
+                width: 100%;
+                max-width: 250px;
+            }
+        }
     </style>
 </head>
 <body>
