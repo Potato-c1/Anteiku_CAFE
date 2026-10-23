@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Anteiku coffee shop</title>
     <style>
-        html { font-size: 16px; }
+        html { font-size: 16px; scroll-behavior: smooth; }
 
         body { padding: 0; margin: 0; background-color: #ffebe0; }
 
@@ -35,6 +35,7 @@
             margin-top: 1rem;
             height: 80vh;
             background-size: cover;
+            background-position: center;
             color: #ffffff;
             display: flex;
             flex-direction: column;
@@ -73,14 +74,15 @@
 
         .button2:hover { background: #eafce8; color: #000000; transform: translateY(-2px); }
 
-        #Expectations { display: flex; 
+        #aboutUs { display: flex; 
             flex-direction: row; 
             padding: 4rem; 
             gap: 3rem; 
             background: #ffebe0; 
             align-items: center; 
             justify-content: center; }
-        .expectationsCard { display: flex; 
+
+        .aboutUsCard { display: flex; 
             flex-direction: column; 
             height: 7rem; width: 10rem;
             background: #ffffff; 
@@ -88,7 +90,7 @@
             border-radius: 5px;
             box-shadow: 0.5rem 0.5rem 1rem #d7d7d7; }
 
-        footer { display: flex; justify-content: center; align-items: center; background: #2b1e1a; color: #ffffff; }
+        footer { display: flex; justify-content: center; align-items: center; background: #2b1e1a; color: #ffffff; padding: 1rem; }
 
         /* para sa mga naka cell Phones diyan */
 
@@ -101,14 +103,14 @@
                 padding: 1rem;
             }
 
-            .logo {  margin: 0; }
+            .logo { margin: 0; }
 
             .mainPage { padding: 2rem; }
 
             .mobileScreenQuote1,
             .mobileScreenQuote2 {
-              display: block;
-              text-align: center;
+             display: block;
+             text-align: center;
             }
             
             .nav-links {
@@ -121,12 +123,12 @@
                 font-size: 1.8rem;
             }
 
-            #Expectations {
+            #aboutUs {
                 flex-direction: column;
                 padding: 2rem 1.5rem;
             }
 
-            .expectationsCard {
+            .aboutUsCard {
                 width: 100%;
                 box-sizing: border-box;
             }
@@ -155,7 +157,7 @@
         <a href="index.html" class="logo">☕ Anteiku Coffe Shop</a>
         <a href="Products.html"> Products </a>
         <a href="About.html"> About us </a>
-        <a href="#Expectations"> About Shop</a>
+        <a href="#aboutUs"> About Shop</a>
     </header>
 
     <section class="mainPage">
@@ -168,20 +170,20 @@
       </div>
     </section>
 
-    <section id="Expectations">
-        <div class="expectationsCard">🌱 ORGANIC BEANS
+    <section id="aboutUs">
+        <div class="aboutUsCard">🌱 ORGANIC BEANS
             <p>Naturally grown, carefully handpicked, and roasted to perfection.</p>
         </div>
-        <div class="expectationsCard">🥖FRESHLY BAKED
+        <div class="aboutUsCard">🥖FRESHLY BAKED
             <p>Bread, Freshly Baked In-House Daily.</p>
         </div>
-        <div class="expectationsCard">🏡COMFORTABLE SPACE
+        <div class="aboutUsCard">🏡COMFORTABLE SPACE
             <p>A relaxing environment for studying, working, or meeting friends.</p>
         </div>
     </section>
 
 <footer>
-    <p>&copy; 2026 Anteiku Coffe Shop. All rights reserved.</p>
+    <p>&copy; 2026 Anteiku Coffee Shop. All rights reserved.</p>
 </footer>
 
 </body>
