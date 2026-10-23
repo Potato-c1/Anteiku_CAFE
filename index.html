@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anteiku coffee shop</title>
+    <style>
+        html { font-size: 16px; }
+
+        body { padding: 0; margin: 0; background-color: #ffebe0; }
+
+        header { display: flex; 
+            justify-content: space-between; 
+            align-items: center;
+            border-bottom: solid 0.5rem #d4a373;
+            background-color: #2b1e1a;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 100; }
+
+        .logo { margin-right: 20rem; 
+            font-size: 1.5rem; 
+            font-weight: 700; 
+            color: #d4a373;
+            transition: 0.3s }
+
+        .logo:hover { color: #f3d6ba; transform: translateY(-1px);}
+
+        header a { color: #d0ffd0; text-decoration: none; transition: 0.3s; }
+        header a:hover { color: #9aff9a; transform: translateY(-1px);}
+
+        .mainPage { background: linear-gradient(#2b1e1ab3, #2b1e1ab3), 
+            url('Images/mainPageWallPaper.jpg');
+            margin-top: 1rem;
+            height: 80vh;
+            background-size: cover;
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center; }
+
+        h1 { font-size: 2.5rem; }
+
+        .Pages { display: flex; flex-direction: row; gap: 3rem; margin-top: 5rem; }
+        .button1 { font-size: 1rem; 
+            border-radius: 7px; 
+            width: calc(8rem + 7px);
+            height: calc(2.5rem + 7px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background:#d4a373; 
+            text-decoration: none; 
+            color: #000000; 
+            transition: 0.3s;}
+
+        .button1:hover { background: #eafce8; transform: translateY(-2px); }
+
+        .button2 { font-size: 1rem; 
+            border-radius: 7px; 
+            width: 8rem;
+            height: 2.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid #ffffff;
+            background: transparent; 
+            text-decoration: none; 
+            color: #ffffff;
+            transition: 0.3s; }
+
+        .button2:hover { background: #eafce8; color: #000000; transform: translateY(-2px); }
+
+        #Expectations { display: flex; 
+            flex-direction: row; 
+            padding: 4rem; 
+            gap: 3rem; 
+            background: #ffebe0; 
+            align-items: center; 
+            justify-content: center; }
+        .expectationsCard { display: flex; 
+            flex-direction: column; 
+            height: 7rem; width: 10rem;
+            background: #ffffff; 
+            padding: 1rem; 
+            border-radius: 5px;
+            box-shadow: 0.5rem 0.5rem 1rem #d7d7d7; }
+
+        footer { display: flex; justify-content: center; align-items: center; background: #2b1e1a; color: #ffffff; }
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">☕ Anteiku Coffe Shop</a>
+        <a href="Products.html"> Products </a>
+        <a href="About.html"> About us </a>
+        <a href="#Expectations"> About Shop</a>
+    </header>
+
+    <section class="mainPage">
+      <h1>Where every ☕ feels like a warm hug</span></h1>
+
+      <div class="Pages">
+      <a class="button1" href="Products.html">PRODUCTS</a>
+      <a class="button2" href="About.html">ABOUT US</a>
+      </div>
+    </section>
+
+    <section id="Expectations">
+        <div class="expectationsCard">🌱 ORGANIC BEANS
+            <p>Naturally grown, carefully handpicked, and roasted to perfection.</p>
+        </div>
+        <div class="expectationsCard">🥖FRESHLY BAKED
+            <p>Bread, Freshly Baked In-House Daily.</p>
+        </div>
+        <div class="expectationsCard">🏡COMFORTABLE SPACE
+            <p>A relaxing environment for studying, working, or meeting friends.</p>
+        </div>
+    </section>
+
+<footer>
+    <p>&copy; 2026 Anteiku Coffe Shop. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
